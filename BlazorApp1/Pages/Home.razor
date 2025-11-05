@@ -1,5 +1,5 @@
 ﻿@page "/"
-
+@using System.Timers
 <style>
 .container {
     width: 400px;
@@ -27,6 +27,12 @@ string uniqueDescription = $"Button #{animalNumber}";
   
 }
   </div>
+  <div class="rov">
+  <h2>Matches found: @matchesFound</h2>
+  </div>
+  <div class="row">
+  <h2>Time : @timeDisplay</h2>
+  </div>
 </div>
 
 @code {
@@ -43,8 +49,15 @@ string uniqueDescription = $"Button #{animalNumber}";
 };
 
     List<string> shuffledAnimals = new List<string>();
+    int matchesFound = 0;
+
+Timer timer;
+int tenthsOfSecondsElapsed = 0;
+string timeDisplay;
     protected override void OnInitialized()
     {
+      timer = new Timer(100);
+      timer.Elapsed += Timer_Tick;
         SetUpGame();
     }
     private void SetUpGame()
@@ -53,6 +66,8 @@ Random random = new Random();
 shuffledAnimals = animalEmoji
 .OrderBy(item => random.Next())
 .ToList();
+matchesFound = 0;
+tenthsOfSecondsElapsed =0;
     }
 
 string lastAnimalFound = string.Empty;
@@ -64,6 +79,7 @@ private void ButtonClick(string animal, string animalDescription)
         // Вибір першого елементу пари
         lastAnimalFound = animal;
         lastDescription = animalDescription;
+        timer.Start();
     }
     else if ((lastAnimalFound == animal) && (animalDescription != lastDescription))
     {
@@ -71,6 +87,15 @@ private void ButtonClick(string animal, string animalDescription)
         shuffledAnimals = shuffledAnimals
             .Select(a => a.Replace(animal, string.Empty))
             .ToList();
+            matchesFound ++;
+            if (matchesFound == 8)
+            {
+timer.Stop();
+timeDisplay += "Play again?";
+
+              //гра завершенна 
+              SetUpGame();
+            }
 
         lastAnimalFound = string.Empty;
         lastDescription = string.Empty;
@@ -85,7 +110,17 @@ private void ButtonClick(string animal, string animalDescription)
         lastDescription = string.Empty;
     }
 }
+private void Timer_Tick(object source, ElapsedEventArgs e)
+{ 
+  InvokeAsync(() =>
+  {
+tenthsOfSecondsElapsed ++;
+timeDisplay = (tenthsOfSecondsElapsed /10F)
+.ToString("0.0s");
+StateHasChanged();
 
+  });
+}
 
 
 }

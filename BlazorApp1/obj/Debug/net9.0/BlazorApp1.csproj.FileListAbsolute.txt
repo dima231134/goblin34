@@ -815,7 +815,6 @@
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/blazor.build.boot-extension.json
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/blazor.boot.json
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/fwzn8fvuqu-8rbvw3on5j.gz
-/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/ywbieikc3c-6w92ro4hs4.gz
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/o443jpnwju-bqjiyaj88i.gz
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/qwhwpy2s0b-c2jlpeoesf.gz
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/hspagil34f-erw9l3u2r3.gz
@@ -1073,10 +1072,12 @@
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/refint/BlazorApp1.dll
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/BlazorApp1.pdb
 /Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/ref/BlazorApp1.dll
-/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.kiq1bood3d.wasm
-/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.7nrtg53pha.pdb
-/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.kiq1bood3d.wasm.gz
-/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.7nrtg53pha.pdb.gz
-/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/rx7sjm95zc-kiq1bood3d.gz
-/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/kpn7vtgf7q-7nrtg53pha.gz
-/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/5jzqasczcu-fv41kicf6r.gz
+/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/BlazorApp1.sourcelink.json
+/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.1zaugy6ll4.wasm
+/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.f594eefgh5.pdb
+/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.1zaugy6ll4.wasm.gz
+/Users/getapp/goblin/BlazorApp1/bin/Debug/net9.0/wwwroot/_framework/BlazorApp1.f594eefgh5.pdb.gz
+/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/ywbieikc3c-mofpa4e8r2.gz
+/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/rx7sjm95zc-1zaugy6ll4.gz
+/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/kpn7vtgf7q-f594eefgh5.gz
+/Users/getapp/goblin/BlazorApp1/obj/Debug/net9.0/compressed/5jzqasczcu-v70ygpwj7u.gz
